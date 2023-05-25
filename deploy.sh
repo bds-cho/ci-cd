@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 docker stop $(docker ps -aq) 2>/dev/null
 docker rm $(docker ps -aq) 2>/dev/null
 docker rmi webapp-image 2>/dev/null
