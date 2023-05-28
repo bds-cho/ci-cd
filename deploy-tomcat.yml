@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: true
+  tasks:
+     - name: stop docker container
+       shell: docker stop $(docker ps -aq) 2>/dev/null
+     - name: remove docker container
+       shell: docker rm $(docker ps -aq) 2>/dev/null
+     - name: remove docker image
+       shell: docker rmi $(docker images -q) 2>/dev/null
+     - name: deploy new docker container
+       shell: docker run -d -p 8080:8080 bschouhan1029/webapp:latest
