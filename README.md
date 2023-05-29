@@ -10,7 +10,7 @@ This repository contains Maven project files required for the build, Dockerfile 
 - <b>GitHub Repository</b>: Webhook setup for Payload URL <jenkins_server_ip>:8080/github-webhook/ secured by a secret text.
 <pre>
 <p align="center">
-<img src="https://github.com/bschouhan1029/bschouhan1029/blob/main/ci-cd.png?raw=true"  width="800" height="430">
+<img src="https://github.com/bschouhan1029/bschouhan1029/blob/main/ci-cd.png?raw=true"  width="800" height="400">
 </p>
 </pre>
 ### Pipeline Steps:
