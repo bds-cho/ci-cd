@@ -9,11 +9,9 @@ This repository contains Maven project files required for the build, Dockerfile 
   - <b>Tomcat Server_s</b>: Docker (logged in).
 - <b>GitHub Repository</b>: Webhook setup for Payload URL <jenkins_server_ip>:8080/github-webhook/ secured by a secret text.
 
-
 <p align="center">
 <img src="https://github.com/bschouhan1029/bschouhan1029/blob/main/ci-cd.png?raw=true"  width="800" height="400">
 </p>
-
 
 ### Pipeline Steps:
 - <b>Step 1</b>: Developer commits the code into GitHub.
