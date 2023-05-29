@@ -12,4 +12,6 @@ This repository contains Maven project files required for the build, Dockerfile 
 <p align="center">
 <img src="https://github.com/bschouhan1029/bschouhan1029/blob/main/ci-cd.png?raw=true"  width="800" height="400">
 </p>
-
+<br><br>
+### Pipeline Steps:
+- <b>Step 1</b>: Developer commits his code into GitHub.
