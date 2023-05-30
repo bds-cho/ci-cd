@@ -15,3 +15,8 @@ This repository contains Maven project files required for the build, Dockerfile 
 
 ### Pipeline Steps:
 - <b>Step 1</b>: Developer commits the code into GitHub.
+- <b>Step 2</b>: Developer's commit triggers the Webhook and Jenkins server starts the Job.
+- <b>Step 3</b>: Jenkins server transfers the Maven build artifact (.war file) and Dockfer file to the Ansible server over SSH.
+- <b>Step 4</b>: Jenkins server commands Ansible server to build a Docker image based on the .war file and Dockerfile and push to the Docker-Hub. And after that run the Playbook (deploy-tomcat.yml).
+- <b>Step 5</b>: Ansible server starts the Playbook (deploy-tomcat.yml) which commands the Tomcat (Docker) server to pull the latest image of the Webapp from Docker-Hub and start a container.
+- <b>Step 6</b>: Tomcat (Docker) Server pulls the image from the Docker-Hub and starts a container with port mapping (8080:8080). End result gets deployed at <b><tomcat_server_ip>:8080/webapp/</b>.
